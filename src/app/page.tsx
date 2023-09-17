@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Hello Home</div>;
+  return <div className="flex gap-2">main page</div>;
 }
