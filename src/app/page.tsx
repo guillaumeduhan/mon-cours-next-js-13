@@ -1,10 +1,10 @@
 export const metadata = {
   title: "Ma page principale",
   openGraph: {
-    title: "Next.js",
-    description: "The React Framework for the Web",
+    title: "Mon titre OpenGraph ici",
+    description: "Mon description OpenGraph ici",
     url: "https://nextjs.org",
-    siteName: "Next.js",
+    siteName: "Codewithguillaume",
     images: [
       {
         url: "/monsite.png",
