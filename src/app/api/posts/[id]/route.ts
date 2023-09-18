@@ -17,9 +17,9 @@ const posts = [
   },
 ];
 
-export async function GET() {
-  // toutes les opérations que je veux
+export async function GET(request: Request, context: any) {
+  const { params } = context;
   return NextResponse.json({
-    posts,
+    post: posts.filter((x) => x.id.toString() === params.id),
   });
 }
