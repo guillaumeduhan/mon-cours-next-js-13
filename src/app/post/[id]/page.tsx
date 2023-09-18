@@ -11,17 +11,19 @@ const fetchPost = async (postId: string) => {
 export async function generateMetadata({ params }: any) {
   const { post }: any = await fetchPost(params.id);
 
+  console.log(post);
+
   return {
-    title: post.title,
-    description: post.title,
+    title: post[0].title,
+    description: post[0].title,
     openGraph: {
-      title: post.title,
-      description: post.title,
-      url: `/posts/${params.id}`,
+      title: post[0].title,
+      description: post[0].title,
+      url: `/post[0]s/${params.id}`,
       siteName: "Codewithguillaume",
       images: [
         {
-          url: post.img_url,
+          url: post[0].img_url,
           width: 1260,
           height: 800,
         },
