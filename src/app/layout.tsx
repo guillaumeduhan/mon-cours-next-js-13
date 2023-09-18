@@ -1,5 +1,4 @@
-// import Header from "@/components/Header";
-// import CreateContextProvider from "@/context";
+import CreateContextProvider from "@/context";
 import "./globals.css";
 
 export default function RootLayout({
@@ -10,11 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
-        {/* <CreateContextProvider>
-          <Header />
-          {children}
-        </CreateContextProvider> */}
+        <CreateContextProvider>{children}</CreateContextProvider>
       </body>
     </html>
   );
