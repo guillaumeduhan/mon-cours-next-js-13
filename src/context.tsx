@@ -11,14 +11,16 @@ export default function CreateContextProvider({
 }) {
   const [title, setTitle] = useState("Ma superbe app");
 
-  const fetchProducts = async () => {
-    /// ...
-    //  setProducts([{ .... }])
+  const fetchPost = async (postId: string) => {
+    const post = await fetch(`/api/posts/${postId}`, {
+      method: "GET",
+    });
+    return post;
   };
 
   const GlobalContext = useMemo(
     () => ({
-      fetchProducts,
+      fetchPost,
       title,
       setTitle,
     }),

@@ -20,6 +20,6 @@ const posts = [
 export async function GET(request: Request, context: any) {
   const { params } = context;
   return NextResponse.json({
-    post: posts.filter((x) => x.id.toString() === params.id),
+    post: posts.find((x) => x.id.toString() === params.id),
   });
 }
