@@ -1,19 +1,7 @@
 export const metadata = {
-  title: "Ma page principale",
+  title: "Le titre de ma page",
   openGraph: {
-    title: "Mon titre OpenGraph ici",
-    description: "Mon description OpenGraph ici",
-    url: "https://nextjs.org",
-    siteName: "Codewithguillaume",
-    images: [
-      {
-        url: "/monsite.png",
-        width: 1260,
-        height: 800,
-      },
-    ],
-    locale: "en-US",
-    type: "website",
+    title: "Le titre opengraph de ma page",
   },
 };
 
